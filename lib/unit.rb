@@ -7,6 +7,10 @@ class Unit
     @attack_power = attack_power
   end
 
+  def dead?
+    return true if @health_points <= 0
+  end
+
   def attack!(enemy)
     enemy.damage(attack_power)
   end

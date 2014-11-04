@@ -8,7 +8,7 @@ class Barracks < Building
     @food = 80
   end
 
-  def damage(damage)
+  def footman_damage(damage)
     @health_points -= (damage/2).ceil
   end
 

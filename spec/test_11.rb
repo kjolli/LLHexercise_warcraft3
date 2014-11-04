@@ -19,7 +19,7 @@ describe Barracks do
 
   describe "#damage" do
     it "should reduce the building's health_points by half of Footmans' regular AP" do
-      @barracks.damage(10) #Footman regular AP of 10
+      @barracks.footman_damage(10) #Footman regular AP of 10
       expect(@barracks.health_points).to eq(495) # starts at 500
     end
   end
