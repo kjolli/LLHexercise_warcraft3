@@ -8,8 +8,8 @@ class Footman < Unit
     enemy.damage(@attack_power)
   end
 
-  def damage(damage)
-    @health_points -= damage
+  def damage(damage_amount)
+    @health_points -= damage_amount
   end
   
 end

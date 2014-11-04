@@ -1,10 +1,15 @@
-class Barracks
+class Barracks < Building
 
   attr_accessor :gold, :food
 
   def initialize
+    super(500, 0)
     @gold = 1000
     @food = 80
+  end
+
+  def damage(damage)
+    @health_points -= (damage/2).ceil
   end
 
   def train_footman
