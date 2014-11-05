@@ -26,7 +26,5 @@ describe Barracks do
 
 end
 
- # before :each do
- #   @footman = Footman.new
- #  end
+ 
 

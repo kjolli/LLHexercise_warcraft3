@@ -8,11 +8,11 @@ class Unit
   end
 
   def dead?
-    return true if @health_points <= 0
+     health_points <= 0
   end
 
   def attack!(enemy)
-    enemy.damage(attack_power)
+    (enemy.damage(attack_power) if !dead?) if !enemy.dead?
   end
 
   def damage(damage)

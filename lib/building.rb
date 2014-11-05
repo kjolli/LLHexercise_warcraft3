@@ -7,4 +7,12 @@ class Building
     @attack_power = attack_power
   end
 
+  def dead?
+     health_points <= 0
+  end
+
+  def damage(damage)
+    @health_points -= damage
+  end
+
 end
